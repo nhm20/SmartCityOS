@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primaryColor">#6200EE</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="vivid_cyan">#17EAD9</color>
+    <color name="soft_blue">#6078EA</color>
+
+    <style name="PrimaryButton">
+        <item name="android:padding">10dp</item>
+        <item name="android:backgroundTint">@color/primaryColor</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>
