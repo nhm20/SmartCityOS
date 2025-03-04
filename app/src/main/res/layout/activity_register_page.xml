@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterPage"
     android:background="@color/black"
     android:orientation="vertical"
     android:gravity="center">
@@ -19,46 +17,41 @@
         android:textColor="@color/white"
         android:gravity="center"
         />
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="10dp"
-        android:layout_marginTop="20dp">
-        <TextView
-            android:layout_width="match_parent"
+        android:text="Select Options"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="20dp"
+
+        />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <RadioButton
+            android:id="@+id/official"
+            android:layout_width="106dp"
             android:layout_height="wrap_content"
-            android:text="Select Options"
-            android:textSize="20sp"
-            android:textStyle="bold"
+            android:text="Official"
             android:textColor="@color/white"
-            android:paddingBottom="8dp" />
-        <RadioGroup
-            android:layout_width="match_parent"
+            android:textSize="15sp"
+            app:buttonTint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/people"
+            android:layout_width="188dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/official"
-                android:text="Official"
-                android:textColor="@color/white"
-                android:textSize="15sp"
-                android:layout_marginTop="10dp"
-                app:buttonTint="@color/white"/>
-
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/people"
-                android:text="People"
-                android:textColor="@color/white"
-                android:textSize="15sp"
-                android:layout_marginTop="10dp"
-                app:buttonTint="@color/white"/>
-        </RadioGroup>
-    </LinearLayout>
+            android:text="People"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:buttonTint="@color/white" />
+    </RadioGroup>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -99,7 +92,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/conf_pass"
-        android:inputType="textPassword"
         android:hint="Confirm Password"
         android:padding="20dp"
         android:background="@drawable/edit_text_rounded"
@@ -116,6 +108,7 @@
         android:textColor="@color/black"
         android:layout_marginTop="15dp"
         android:paddingStart="20dp"
-        android:paddingEnd="20dp"/>
+        android:paddingEnd="20dp"
+        />
 
 </LinearLayout>

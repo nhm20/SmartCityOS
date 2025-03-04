@@ -8,8 +8,9 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="Bengaluru Smart City"
+        app:title="Namma Bengaluru"
         app:titleTextColor="@color/white"
+        app:logo="@drawable/splash"
         android:minHeight="?attr/actionBarTheme"
         android:theme="?attr/actionBarTheme"
         android:layout_marginTop="30dp"
