@@ -6,9 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreen">
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/splash"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:src="@drawable/splash" />
 </LinearLayout>
