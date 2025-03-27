@@ -9,4 +9,13 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="app_title">SmartBLR</string>
+    <string name="dash_2">Tourist Places</string>
+    <string name="dash_1">Volunteer Opportunities</string>
+    <string name="dash_3">Ambulance and Fire Services</string>
+    <string name="dash_4">BBMP Complaint Portal</string>
+    <string name="dash_5">Traffic and Public Transport</string>
+    <string name="dash_6">Emergency Alerts</string>
+
+
 </resources>

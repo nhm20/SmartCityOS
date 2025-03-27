@@ -13,6 +13,30 @@
         android:theme="@style/Theme.Project"
         tools:targetApi="31">
         <activity
+            android:name=".Services.Dashboard"
+            android:exported="true" />
+        <activity
+            android:name=".Services.VolunteerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="true" />
+        <activity
+            android:name=".Services.AlertsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Services.ComplaintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Services.TransportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Services.EmergencyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Services.TouristActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
@@ -29,9 +53,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
