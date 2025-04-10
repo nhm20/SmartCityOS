@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor1"
+        app:title="@string/app_title"
+        android:paddingTop="25dp"
+        app:navigationIcon="@drawable/baseline_menu_24" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:rowCount="3"
+        android:columnCount="2"
+        android:padding="10dp"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:onClick="openActivity"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/Traffic"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_5"
+                android:background="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dash_5"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:onClick="openActivity"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/TouristPlaces"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_1"
+                android:background="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dash_2"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:onClick="openActivity"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/Ambulance"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_3"
+                android:background="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dash_3"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:onClick="openActivity"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/Complaint"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_4"
+                android:background="@color/black"
+
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dash_4"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:onClick="openActivity"
+            android:padding="8dp"
+            >
+
+            <ImageButton
+                android:id="@+id/volunteerOpportunities"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_2"
+                android:background="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dash_1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:onClick="openActivity"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/EmergencyAlerts"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_6"
+                android:background="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dash_6"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </GridLayout>
+
+</LinearLayout>
